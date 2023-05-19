@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		629BC8532A17E95600765E18 /* cat.png in Resources */ = {isa = PBXBuildFile; fileRef = 629BC8522A17E95600765E18 /* cat.png */; };
+		629BC8552A17F31800765E18 /* cat3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 629BC8542A17F31800765E18 /* cat3.jpeg */; };
 		62C371452A151DDD006DB6E5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C371442A151DDD006DB6E5 /* AppDelegate.m */; };
 		62C371482A151DDD006DB6E5 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C371472A151DDD006DB6E5 /* SceneDelegate.m */; };
 		62C3714B2A151DDD006DB6E5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C3714A2A151DDD006DB6E5 /* ViewController.m */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		629BC8522A17E95600765E18 /* cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat.png; sourceTree = "<group>"; };
+		629BC8542A17F31800765E18 /* cat3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cat3.jpeg; path = ../../../Downloads/cat3.jpeg; sourceTree = "<group>"; };
 		62C371402A151DDD006DB6E5 /* CatFact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatFact.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62C371432A151DDD006DB6E5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		62C371442A151DDD006DB6E5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -116,6 +120,8 @@
 				62C3714C2A151DDD006DB6E5 /* Main.storyboard */,
 				62C3714F2A151DDE006DB6E5 /* Assets.xcassets */,
 				62C371512A151DDE006DB6E5 /* LaunchScreen.storyboard */,
+				629BC8542A17F31800765E18 /* cat3.jpeg */,
+				629BC8522A17E95600765E18 /* cat.png */,
 				62C371542A151DDE006DB6E5 /* Info.plist */,
 				62C371552A151DDE006DB6E5 /* main.m */,
 				62C371782A15539E006DB6E5 /* NetworkManager.m */,
@@ -244,8 +250,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				629BC8552A17F31800765E18 /* cat3.jpeg in Resources */,
 				62C371532A151DDE006DB6E5 /* LaunchScreen.storyboard in Resources */,
 				62C371502A151DDE006DB6E5 /* Assets.xcassets in Resources */,
+				629BC8532A17E95600765E18 /* cat.png in Resources */,
 				62C3714E2A151DDD006DB6E5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

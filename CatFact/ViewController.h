@@ -10,7 +10,7 @@
 @interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property (strong, nonatomic) IBOutlet UITableView *catTable;
-@property (strong, nonatomic) NSString *fact;
+//@property (strong, nonatomic) NSString *fact;
 
 @end
 
