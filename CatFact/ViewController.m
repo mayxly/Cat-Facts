@@ -47,6 +47,7 @@
           // Get reference to the destination view controller
           FactViewController *vc = [segue destinationViewController];
           [vc setFact:self.selectedFact];
+          [vc setFactNum:@"3"];
       }}
 
 - (NSIndexPath *)tableView:(UITableView *)tableView
@@ -79,7 +80,9 @@
     }
     cell.textLabel.numberOfLines = 0; // Set the number of lines to 0 for unlimited lines
     cell.textLabel.lineBreakMode = NSLineBreakByWordWrapping; // Enable word wrapping
-    cell.textLabel.text = self.catFacts[indexPath.row];
+    
+   NSString *s = [NSString stringWithFormat:@"%i. %@", indexPath.row +1,self.catFacts[indexPath.row]];
+    cell.textLabel.text = s;
     return cell;
 }
 

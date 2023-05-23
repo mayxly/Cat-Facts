@@ -17,6 +17,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.textView.text = self.fact;
+    self.factLabel.text = self.factNum;
 }
-
 @end

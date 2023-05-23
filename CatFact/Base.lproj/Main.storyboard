@@ -88,12 +88,20 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="dOH-Yu-nIc"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FACT #1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EJV-CV-usE">
+                                <rect key="frame" x="165" y="77" width="63" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0Ho-q7-Xwq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="gu5-rw-MlA"/>
                     <connections>
+                        <outlet property="factLabel" destination="EJV-CV-usE" id="DmI-vm-IGV"/>
                         <outlet property="textView" destination="e0T-y9-0TA" id="dcj-Fd-v2C"/>
                     </connections>
                 </viewController>
