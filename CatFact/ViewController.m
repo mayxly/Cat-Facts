@@ -1,6 +1,6 @@
 #import "ViewController.h"
 #import "NetworkManager.h"
-
+#import "FactViewController.h"
 @interface ViewController ()
 
 @end
@@ -36,6 +36,26 @@
        }];
 
 }
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self performSegueWithIdentifier:@"TableToFact" sender:self];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Make sure your segue name in storyboard is the same as this line
+      if ([[segue identifier] isEqualToString:@"TableToFact"])
+      {
+          // Get reference to the destination view controller
+          FactViewController *vc = [segue destinationViewController];
+          [vc setFact:self.selectedFact];
+      }}
+
+- (NSIndexPath *)tableView:(UITableView *)tableView
+  willSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    self.selectedFact = [self.catFacts objectAtIndex:indexPath.row];
+    return indexPath;
+}
+
+
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [self.catFacts count];
@@ -65,9 +85,9 @@
 
 
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-}
+//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+//
+//}
 
 
 
