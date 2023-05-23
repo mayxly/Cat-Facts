@@ -18,6 +18,7 @@
 		62C3716A2A151DDE006DB6E5 /* CatFactUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C371692A151DDE006DB6E5 /* CatFactUITests.m */; };
 		62C3716C2A151DDE006DB6E5 /* CatFactUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C3716B2A151DDE006DB6E5 /* CatFactUITestsLaunchTests.m */; };
 		62C371792A15539E006DB6E5 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C371782A15539E006DB6E5 /* NetworkManager.m */; };
+		62C3717D2A180718006DB6E5 /* HomePageViewContoller.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C3717C2A180718006DB6E5 /* HomePageViewContoller.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		62C3716B2A151DDE006DB6E5 /* CatFactUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatFactUITestsLaunchTests.m; sourceTree = "<group>"; };
 		62C371782A15539E006DB6E5 /* NetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
 		62C3717A2A1553CD006DB6E5 /* NetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		62C3717B2A180718006DB6E5 /* HomePageViewContoller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomePageViewContoller.h; sourceTree = "<group>"; };
+		62C3717C2A180718006DB6E5 /* HomePageViewContoller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomePageViewContoller.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,8 @@
 				62C371552A151DDE006DB6E5 /* main.m */,
 				62C371782A15539E006DB6E5 /* NetworkManager.m */,
 				62C3717A2A1553CD006DB6E5 /* NetworkManager.h */,
+				62C3717B2A180718006DB6E5 /* HomePageViewContoller.h */,
+				62C3717C2A180718006DB6E5 /* HomePageViewContoller.m */,
 			);
 			path = CatFact;
 			sourceTree = "<group>";
@@ -276,6 +281,7 @@
 				62C371562A151DDE006DB6E5 /* main.m in Sources */,
 				62C371792A15539E006DB6E5 /* NetworkManager.m in Sources */,
 				62C371482A151DDD006DB6E5 /* SceneDelegate.m in Sources */,
+				62C3717D2A180718006DB6E5 /* HomePageViewContoller.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
