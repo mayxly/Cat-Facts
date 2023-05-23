@@ -12,6 +12,7 @@
 @property (strong, nonatomic) IBOutlet UITableView *catTable;
 @property (strong, nonatomic) NSMutableArray *catFacts;
 @property (strong, nonatomic) NSString *selectedFact;
+@property (strong, nonatomic) NSString *factNum;
 
 @end
 

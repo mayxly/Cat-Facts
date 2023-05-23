@@ -21,7 +21,7 @@
                NSLog(@"Error: %@", error.localizedDescription);
            } else {
                // Process the response data
-               NSLog(@"Response: %@", responseDict);
+//               NSLog(@"Response: %@", responseDict);
                NSArray *catArray = [responseDict valueForKey:@"data"];
                if (!self.catFacts) self.catFacts = [[NSMutableArray alloc] init];
                for (int i = 0; i < [catArray count]; i++) {
@@ -47,12 +47,13 @@
           // Get reference to the destination view controller
           FactViewController *vc = [segue destinationViewController];
           [vc setFact:self.selectedFact];
-          [vc setFactNum:@"3"];
+          [vc setFactNum:self.factNum];
       }}
 
 - (NSIndexPath *)tableView:(UITableView *)tableView
   willSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     self.selectedFact = [self.catFacts objectAtIndex:indexPath.row];
+    self.factNum = [NSString stringWithFormat:@"%li", indexPath.row+1];
     return indexPath;
 }
 
@@ -70,8 +71,8 @@
                    reuseIdentifier: @"cell"];
        }
 
-    UIColor *color1 = [UIColor colorWithRed:193.0/255.0 green:217.0/255.0 blue:202.0/255.0 alpha:1.0];
-    UIColor *color2 = [UIColor colorWithRed:230.0/255.0 green:245.0/255.0 blue:235.0/255.0 alpha:1.0];
+    UIColor *color1 = [UIColor colorWithRed:230.0/255.0 green:246.0/255.0 blue:241.0/255.0 alpha:1.0];
+    UIColor *color2 = [UIColor colorWithRed:215.0/255.0 green:241.0/255.0 blue:234.0/255.0 alpha:1.0];
     if (indexPath.row % 2 == 0) {
         cell.backgroundColor = color1;
           
@@ -81,18 +82,9 @@
     cell.textLabel.numberOfLines = 0; // Set the number of lines to 0 for unlimited lines
     cell.textLabel.lineBreakMode = NSLineBreakByWordWrapping; // Enable word wrapping
     
-   NSString *s = [NSString stringWithFormat:@"%i. %@", indexPath.row +1,self.catFacts[indexPath.row]];
-    cell.textLabel.text = s;
+    cell.textLabel.text = [NSString stringWithFormat:@"%li. %@", indexPath.row +1,self.catFacts[indexPath.row]];;
     return cell;
 }
-
-
-
-//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-//
-//}
-
-
 
 
 @end

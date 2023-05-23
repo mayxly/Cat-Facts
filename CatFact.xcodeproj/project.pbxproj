@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		62562C192A1D18D300CCB0C6 /* FactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62562C182A1D18D300CCB0C6 /* FactViewController.m */; };
-		62562C1B2A1D2E4600CCB0C6 /* cat.png in Resources */ = {isa = PBXBuildFile; fileRef = 62562C1A2A1D2E4600CCB0C6 /* cat.png */; };
 		62C371452A151DDD006DB6E5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C371442A151DDD006DB6E5 /* AppDelegate.m */; };
 		62C371482A151DDD006DB6E5 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C371472A151DDD006DB6E5 /* SceneDelegate.m */; };
 		62C3714B2A151DDD006DB6E5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C3714A2A151DDD006DB6E5 /* ViewController.m */; };
@@ -20,6 +19,8 @@
 		62C3716A2A151DDE006DB6E5 /* CatFactUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C371692A151DDE006DB6E5 /* CatFactUITests.m */; };
 		62C3716C2A151DDE006DB6E5 /* CatFactUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C3716B2A151DDE006DB6E5 /* CatFactUITestsLaunchTests.m */; };
 		62C371792A15539E006DB6E5 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C371782A15539E006DB6E5 /* NetworkManager.m */; };
+		62C371832A1D6960006DB6E5 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 62C371822A1D6960006DB6E5 /* logo.png */; };
+		62C371852A1D6965006DB6E5 /* cat.png in Resources */ = {isa = PBXBuildFile; fileRef = 62C371842A1D6965006DB6E5 /* cat.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +43,6 @@
 /* Begin PBXFileReference section */
 		62562C172A1D18D300CCB0C6 /* FactViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FactViewController.h; sourceTree = "<group>"; };
 		62562C182A1D18D300CCB0C6 /* FactViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FactViewController.m; sourceTree = "<group>"; };
-		62562C1A2A1D2E4600CCB0C6 /* cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cat.png; path = ../../../Downloads/cat.png; sourceTree = "<group>"; };
 		62C371402A151DDD006DB6E5 /* CatFact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatFact.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62C371432A151DDD006DB6E5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		62C371442A151DDD006DB6E5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -62,6 +62,8 @@
 		62C3716B2A151DDE006DB6E5 /* CatFactUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatFactUITestsLaunchTests.m; sourceTree = "<group>"; };
 		62C371782A15539E006DB6E5 /* NetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
 		62C3717A2A1553CD006DB6E5 /* NetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		62C371822A1D6960006DB6E5 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		62C371842A1D6965006DB6E5 /* cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,8 +120,9 @@
 				62C371472A151DDD006DB6E5 /* SceneDelegate.m */,
 				62C371492A151DDD006DB6E5 /* ViewController.h */,
 				62C3714A2A151DDD006DB6E5 /* ViewController.m */,
+				62C371822A1D6960006DB6E5 /* logo.png */,
+				62C371842A1D6965006DB6E5 /* cat.png */,
 				62C3714C2A151DDD006DB6E5 /* Main.storyboard */,
-				62562C1A2A1D2E4600CCB0C6 /* cat.png */,
 				62C3714F2A151DDE006DB6E5 /* Assets.xcassets */,
 				62C371512A151DDE006DB6E5 /* LaunchScreen.storyboard */,
 				62C371542A151DDE006DB6E5 /* Info.plist */,
@@ -252,9 +255,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62C371852A1D6965006DB6E5 /* cat.png in Resources */,
+				62C371832A1D6960006DB6E5 /* logo.png in Resources */,
 				62C371532A151DDE006DB6E5 /* LaunchScreen.storyboard in Resources */,
 				62C371502A151DDE006DB6E5 /* Assets.xcassets in Resources */,
-				62562C1B2A1D2E4600CCB0C6 /* cat.png in Resources */,
 				62C3714E2A151DDD006DB6E5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
