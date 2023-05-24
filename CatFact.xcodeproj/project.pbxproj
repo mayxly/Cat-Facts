@@ -19,8 +19,9 @@
 		62C3716A2A151DDE006DB6E5 /* CatFactUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C371692A151DDE006DB6E5 /* CatFactUITests.m */; };
 		62C3716C2A151DDE006DB6E5 /* CatFactUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C3716B2A151DDE006DB6E5 /* CatFactUITestsLaunchTests.m */; };
 		62C371792A15539E006DB6E5 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C371782A15539E006DB6E5 /* NetworkManager.m */; };
-		62C371832A1D6960006DB6E5 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 62C371822A1D6960006DB6E5 /* logo.png */; };
 		62C371852A1D6965006DB6E5 /* cat.png in Resources */ = {isa = PBXBuildFile; fileRef = 62C371842A1D6965006DB6E5 /* cat.png */; };
+		62C371892A1E5E8C006DB6E5 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 62C371882A1E5E8C006DB6E5 /* logo.png */; };
+		62C3718F2A1E6B3E006DB6E5 /* CounterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C3718E2A1E6B3E006DB6E5 /* CounterViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,8 +63,10 @@
 		62C3716B2A151DDE006DB6E5 /* CatFactUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CatFactUITestsLaunchTests.m; sourceTree = "<group>"; };
 		62C371782A15539E006DB6E5 /* NetworkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
 		62C3717A2A1553CD006DB6E5 /* NetworkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
-		62C371822A1D6960006DB6E5 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		62C371842A1D6965006DB6E5 /* cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat.png; sourceTree = "<group>"; };
+		62C371882A1E5E8C006DB6E5 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		62C3718D2A1E6B3E006DB6E5 /* CounterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CounterViewController.h; sourceTree = "<group>"; };
+		62C3718E2A1E6B3E006DB6E5 /* CounterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CounterViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,10 +123,10 @@
 				62C371472A151DDD006DB6E5 /* SceneDelegate.m */,
 				62C371492A151DDD006DB6E5 /* ViewController.h */,
 				62C3714A2A151DDD006DB6E5 /* ViewController.m */,
-				62C371822A1D6960006DB6E5 /* logo.png */,
 				62C371842A1D6965006DB6E5 /* cat.png */,
 				62C3714C2A151DDD006DB6E5 /* Main.storyboard */,
 				62C3714F2A151DDE006DB6E5 /* Assets.xcassets */,
+				62C371882A1E5E8C006DB6E5 /* logo.png */,
 				62C371512A151DDE006DB6E5 /* LaunchScreen.storyboard */,
 				62C371542A151DDE006DB6E5 /* Info.plist */,
 				62C371552A151DDE006DB6E5 /* main.m */,
@@ -131,6 +134,8 @@
 				62C3717A2A1553CD006DB6E5 /* NetworkManager.h */,
 				62562C172A1D18D300CCB0C6 /* FactViewController.h */,
 				62562C182A1D18D300CCB0C6 /* FactViewController.m */,
+				62C3718D2A1E6B3E006DB6E5 /* CounterViewController.h */,
+				62C3718E2A1E6B3E006DB6E5 /* CounterViewController.m */,
 			);
 			path = CatFact;
 			sourceTree = "<group>";
@@ -256,7 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				62C371852A1D6965006DB6E5 /* cat.png in Resources */,
-				62C371832A1D6960006DB6E5 /* logo.png in Resources */,
+				62C371892A1E5E8C006DB6E5 /* logo.png in Resources */,
 				62C371532A151DDE006DB6E5 /* LaunchScreen.storyboard in Resources */,
 				62C371502A151DDE006DB6E5 /* Assets.xcassets in Resources */,
 				62C3714E2A151DDD006DB6E5 /* Main.storyboard in Resources */,
@@ -284,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62C3718F2A1E6B3E006DB6E5 /* CounterViewController.m in Sources */,
 				62562C192A1D18D300CCB0C6 /* FactViewController.m in Sources */,
 				62C3714B2A151DDD006DB6E5 /* ViewController.m in Sources */,
 				62C371452A151DDD006DB6E5 /* AppDelegate.m in Sources */,

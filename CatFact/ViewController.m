@@ -1,6 +1,8 @@
 #import "ViewController.h"
 #import "NetworkManager.h"
 #import "FactViewController.h"
+#import "CounterViewController.h"
+
 @interface ViewController ()
 
 @end
@@ -36,28 +38,8 @@
        }];
 
 }
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [self performSegueWithIdentifier:@"TableToFact" sender:self];
-}
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Make sure your segue name in storyboard is the same as this line
-      if ([[segue identifier] isEqualToString:@"TableToFact"])
-      {
-          // Get reference to the destination view controller
-          FactViewController *vc = [segue destinationViewController];
-          [vc setFact:self.selectedFact];
-          [vc setFactNum:self.factNum];
-      }}
-
-- (NSIndexPath *)tableView:(UITableView *)tableView
-  willSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    self.selectedFact = [self.catFacts objectAtIndex:indexPath.row];
-    self.factNum = [NSString stringWithFormat:@"%li", indexPath.row+1];
-    return indexPath;
-}
-
-
+//API FACT TABLE
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [self.catFacts count];
@@ -70,8 +52,7 @@
                    initWithStyle:UITableViewCellStyleDefault
                    reuseIdentifier: @"cell"];
        }
-
-    UIColor *color1 = [UIColor colorWithRed:230.0/255.0 green:246.0/255.0 blue:241.0/255.0 alpha:1.0];
+    UIColor *color1 = [UIColor colorWithRed:241.0/255.0 green:255.0/255.0 blue:251.0/255.0 alpha:1.0];
     UIColor *color2 = [UIColor colorWithRed:215.0/255.0 green:241.0/255.0 blue:234.0/255.0 alpha:1.0];
     if (indexPath.row % 2 == 0) {
         cell.backgroundColor = color1;
@@ -84,6 +65,36 @@
     
     cell.textLabel.text = [NSString stringWithFormat:@"%li. %@", indexPath.row +1,self.catFacts[indexPath.row]];;
     return cell;
+}
+
+
+//SEGUES
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self performSegueWithIdentifier:@"TableToFact" sender:self];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Make sure your segue name in storyboard is the same as this line
+      if ([[segue identifier] isEqualToString:@"TableToFact"])
+      {
+          // Get reference to the destination view controller
+          FactViewController *vc = [segue destinationViewController];
+          [vc setFact:self.selectedFact];
+          [vc setFactNum:self.factNum];
+      }
+      
+//      else if ([[segue identifier] isEqualToString:@"HomeToCounter"]) {
+//        // Get reference to the destination view controller
+//        CounterViewController *vc = [segue destinationViewController];
+//    }
+}
+
+- (NSIndexPath *)tableView:(UITableView *)tableView
+  willSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    self.selectedFact = [self.catFacts objectAtIndex:indexPath.row];
+    self.factNum = [NSString stringWithFormat:@"%li", indexPath.row+1];
+    return indexPath;
 }
 
 
