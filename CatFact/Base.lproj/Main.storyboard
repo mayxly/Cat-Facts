@@ -151,6 +151,9 @@
                                     </attributedString>
                                     <color key="baseBackgroundColor" red="0.49236197949999999" green="0.76942896839999997" blue="0.67688724259999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="E7r-ch-SLP" kind="show" id="myB-vU-YHp"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Go crazy with cat facts!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fK7-LX-7ch">
                                 <rect key="frame" x="74" y="456" width="244" height="37"/>
@@ -297,10 +300,25 @@
             </objects>
             <point key="canvasLocation" x="336.64122137404581" y="673.94366197183103"/>
         </scene>
+        <!--Breed View Controller-->
+        <scene sceneID="KVV-LS-pU3">
+            <objects>
+                <viewController id="E7r-ch-SLP" customClass="BreedViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="B49-IN-uss">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="isx-Ev-Lvs"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="HdJ-IV-WcE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cmw-Fo-ZNh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="337" y="-752"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="wHE-of-OvR"/>
-        <segue reference="dOH-Yu-nIc"/>
+        <segue reference="nE9-Dt-mq9"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="cat.png" width="800" height="800"/>

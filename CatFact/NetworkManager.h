@@ -14,6 +14,8 @@
 
 + (void)performGETRequestWithURL:(NSURL *)url completionHandler:(void (^)(NSDictionary *responseDict, NSError *error))completionHandler;
 
++ (void)performGETRequestArray:(NSURL *)url completionHandler:(void (^)(NSArray *responseArray, NSError *error))completionHandler;
+
 @end
 
 #endif /* NetworkManager_h */
