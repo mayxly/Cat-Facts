@@ -14,21 +14,17 @@
 @implementation CounterViewController
 
 - (void)viewDidLoad {
+    self.label.text = @"0";
     [super viewDidLoad];
-    //NSLog(@"%@", self.stepper.value);
-    self.stepper.wraps = YES;
-
 }
 
-
-- (IBAction)valueDidChanged:(UIStepper *)sender {
-//Whenever the stepper value increase and decrease the sender.value fetch the curent value of stepper
-        NSUInteger value= sender.value;
-        self.label.text= [NSString stringWithFormat:@"%02lu",value];
+- (IBAction)clicked:(id)sender {
+    int count = (int) self.stepper.value;
+    self.label.text = [NSString stringWithFormat:@"%i ", count];
 }
 
-
-
-
-
+- (IBAction)resetValue:(id)sender {
+    self.stepper.value = 0;
+    self.label.text = @"0";
+}
 @end

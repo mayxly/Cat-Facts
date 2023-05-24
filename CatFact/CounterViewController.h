@@ -4,9 +4,16 @@
 
 @interface CounterViewController : UIViewController
 
-@property NSInteger *catCount;
-@property (strong, nonatomic) IBOutlet UILabel *label;
-@property (strong, nonatomic) IBOutlet UIStepper *stepper;
 
-@end
+
+@property (weak, nonatomic) IBOutlet UILabel *label;
+@property (weak, nonatomic) IBOutlet UIStepper *stepper;
+- (IBAction)clicked:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *reset;
+- (IBAction)resetValue:(id)sender;
+
+
+
+
+@end 
 
