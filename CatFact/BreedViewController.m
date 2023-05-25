@@ -7,6 +7,8 @@
 
 #import "BreedViewController.h"
 #import "NetworkManager.h"
+#include <stdlib.h>
+
 @interface BreedViewController ()
 
 @end
@@ -24,14 +26,17 @@
                NSLog(@"Error: %@", error.localizedDescription);
            } else {
                // Process the response data
-               
-              NSLog(@"Response: %@", responseArray);
-               for (int i = 0; i < [responseArray  count]; i++) {
-                   NSLog(@"%@", [responseArray[i] objectForKey:@"name"]);
-               }
+               self.catArray = responseArray;
+               NSLog(@"Response: %@", self.catArray);
            }
        }];
 }
 
+- (IBAction)generate:(id)sender {
+    int r = arc4random_uniform(66);
+    [self.generate setTitle:@"NOT THIS CAT!" forState:UIControlStateNormal];
+    self.breed.text = [self.catArray[r] objectForKey:@"name"];
+    self.info.text = [self.catArray[r] objectForKey:@"description"];
+}
 
 @end

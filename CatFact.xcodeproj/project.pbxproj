@@ -22,6 +22,7 @@
 		62C371852A1D6965006DB6E5 /* cat.png in Resources */ = {isa = PBXBuildFile; fileRef = 62C371842A1D6965006DB6E5 /* cat.png */; };
 		62C371892A1E5E8C006DB6E5 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 62C371882A1E5E8C006DB6E5 /* logo.png */; };
 		62C3718F2A1E6B3E006DB6E5 /* CounterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C3718E2A1E6B3E006DB6E5 /* CounterViewController.m */; };
+		62C371952A1F9FE2006DB6E5 /* BreedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C371942A1F9FE2006DB6E5 /* BreedViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,8 @@
 		62C371882A1E5E8C006DB6E5 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		62C3718D2A1E6B3E006DB6E5 /* CounterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CounterViewController.h; sourceTree = "<group>"; };
 		62C3718E2A1E6B3E006DB6E5 /* CounterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CounterViewController.m; sourceTree = "<group>"; };
+		62C371932A1F9FDE006DB6E5 /* BreedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BreedViewController.h; sourceTree = "<group>"; };
+		62C371942A1F9FE2006DB6E5 /* BreedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BreedViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +139,8 @@
 				62562C182A1D18D300CCB0C6 /* FactViewController.m */,
 				62C3718D2A1E6B3E006DB6E5 /* CounterViewController.h */,
 				62C3718E2A1E6B3E006DB6E5 /* CounterViewController.m */,
+				62C371932A1F9FDE006DB6E5 /* BreedViewController.h */,
+				62C371942A1F9FE2006DB6E5 /* BreedViewController.m */,
 			);
 			path = CatFact;
 			sourceTree = "<group>";
@@ -290,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				62C3718F2A1E6B3E006DB6E5 /* CounterViewController.m in Sources */,
+				62C371952A1F9FE2006DB6E5 /* BreedViewController.m in Sources */,
 				62562C192A1D18D300CCB0C6 /* FactViewController.m in Sources */,
 				62C3714B2A151DDD006DB6E5 /* ViewController.m in Sources */,
 				62C371452A151DDD006DB6E5 /* AppDelegate.m in Sources */,
