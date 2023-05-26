@@ -22,6 +22,7 @@
 		62C371852A1D6965006DB6E5 /* cat.png in Resources */ = {isa = PBXBuildFile; fileRef = 62C371842A1D6965006DB6E5 /* cat.png */; };
 		62C371892A1E5E8C006DB6E5 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 62C371882A1E5E8C006DB6E5 /* logo.png */; };
 		62C3718F2A1E6B3E006DB6E5 /* CounterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C3718E2A1E6B3E006DB6E5 /* CounterViewController.m */; };
+		62F4EB722A20FAB50087823F /* BreedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F4EB6E2A20FAB40087823F /* BreedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,8 @@
 		62C371882A1E5E8C006DB6E5 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		62C3718D2A1E6B3E006DB6E5 /* CounterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CounterViewController.h; sourceTree = "<group>"; };
 		62C3718E2A1E6B3E006DB6E5 /* CounterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CounterViewController.m; sourceTree = "<group>"; };
+		62F4EB662A20F9B50087823F /* CatFact-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CatFact-Bridging-Header.h"; sourceTree = "<group>"; };
+		62F4EB6E2A20FAB40087823F /* BreedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +127,7 @@
 				62C371492A151DDD006DB6E5 /* ViewController.h */,
 				62C3714A2A151DDD006DB6E5 /* ViewController.m */,
 				62C371842A1D6965006DB6E5 /* cat.png */,
+				62F4EB6E2A20FAB40087823F /* BreedViewController.swift */,
 				62C3714C2A151DDD006DB6E5 /* Main.storyboard */,
 				62C3714F2A151DDE006DB6E5 /* Assets.xcassets */,
 				62C371882A1E5E8C006DB6E5 /* logo.png */,
@@ -136,6 +140,7 @@
 				62562C182A1D18D300CCB0C6 /* FactViewController.m */,
 				62C3718D2A1E6B3E006DB6E5 /* CounterViewController.h */,
 				62C3718E2A1E6B3E006DB6E5 /* CounterViewController.m */,
+				62F4EB662A20F9B50087823F /* CatFact-Bridging-Header.h */,
 			);
 			path = CatFact;
 			sourceTree = "<group>";
@@ -224,6 +229,7 @@
 				TargetAttributes = {
 					62C3713F2A151DDD006DB6E5 = {
 						CreatedOnToolsVersion = 14.3;
+						LastSwiftMigration = 1430;
 					};
 					62C3715A2A151DDE006DB6E5 = {
 						CreatedOnToolsVersion = 14.3;
@@ -294,6 +300,7 @@
 				62C3714B2A151DDD006DB6E5 /* ViewController.m in Sources */,
 				62C371452A151DDD006DB6E5 /* AppDelegate.m in Sources */,
 				62C371562A151DDE006DB6E5 /* main.m in Sources */,
+				62F4EB722A20FAB50087823F /* BreedViewController.swift in Sources */,
 				62C371792A15539E006DB6E5 /* NetworkManager.m in Sources */,
 				62C371482A151DDD006DB6E5 /* SceneDelegate.m in Sources */,
 			);
@@ -466,6 +473,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -483,6 +491,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = may.CatFact;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "CatFact/CatFact-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -492,6 +503,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -509,6 +521,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = may.CatFact;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "CatFact/CatFact-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -516,6 +530,7 @@
 		62C371732A151DDE006DB6E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -533,6 +548,7 @@
 		62C371742A151DDE006DB6E5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -550,6 +566,7 @@
 		62C371762A151DDE006DB6E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -565,6 +582,7 @@
 		62C371772A151DDE006DB6E5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
